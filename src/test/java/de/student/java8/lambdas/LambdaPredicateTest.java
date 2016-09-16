@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package de.student.java8.lambdas;
 
 import java.util.ArrayList;
@@ -15,10 +10,7 @@ import org.junit.Test;
  *
  * @author thtesche
  */
-public class LampdaPredicateTest {
-
-   public LampdaPredicateTest() {
-   }
+public class LambdaPredicateTest {
 
    /**
     * Test of filter method, of class LampdaPredicate.
@@ -33,7 +25,7 @@ public class LampdaPredicateTest {
       expResult.add("b");
       expResult.add(" ");
 
-      List<String> result = LampdaPredicate.filter(toBeTested, (String s) -> !s.isEmpty());
+      List<String> result = LambdaPredicate.filter(toBeTested, (String s) -> !s.isEmpty());
 
       assertTrue(result.containsAll(expResult));
 

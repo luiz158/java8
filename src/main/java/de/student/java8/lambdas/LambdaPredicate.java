@@ -10,17 +10,17 @@ import java.util.function.Predicate;
  *
  * @author thtesche
  */
-public class LampdaPredicate {
+public class LambdaPredicate {
 
    public static void main(String[] args) {
       List<String> toBeTested = Arrays.asList("a", "", "b", "  ", " ");
 
-      List<String> result = LampdaPredicate.filter(toBeTested, (String s) -> !s.trim().isEmpty());
+      List<String> result = LambdaPredicate.filter(toBeTested, (String s) -> !s.trim().isEmpty());
 
       System.out.println("Not empty elements of the list:");
       result.forEach((String s) -> System.out.format("\"%s\"\n", s));
 
-      result = LampdaPredicate.filter(toBeTested, (String s) -> s.trim().isEmpty());
+      result = LambdaPredicate.filter(toBeTested, (String s) -> s.trim().isEmpty());
       System.out.println("Empty elements of the list:");
       result.forEach((String s) -> System.out.format("\"%s\"\n", s));
 
