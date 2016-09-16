@@ -22,7 +22,10 @@ public class LambdaSorting {
       // Short strings first. Most elegant implementation
       // list.sort(comparing((string) -> string.length()));
       list.sort(comparing(String::length));
+      list.forEach(System.out::println);
 
+      // And again longest strings first
+      list.sort(comparing(String::length).reversed());
       list.forEach(System.out::println);
 
    }
