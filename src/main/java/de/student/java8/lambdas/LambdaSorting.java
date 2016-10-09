@@ -20,7 +20,6 @@ public class LambdaSorting {
       list.forEach(System.out::println);
 
       // Short strings first. Most elegant implementation
-      // list.sort(comparing((string) -> string.length()));
       list.sort(comparing(String::length));
       list.forEach(System.out::println);
 
