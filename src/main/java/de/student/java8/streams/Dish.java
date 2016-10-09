@@ -43,7 +43,7 @@ class Dish {
 
    @Override
    public String toString() {
-      return name;
+      return type + ": " + name + ", cal: " + calories;
    }
 
    public static final List<Dish> MENU
