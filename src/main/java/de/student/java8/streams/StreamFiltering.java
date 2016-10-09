@@ -11,9 +11,9 @@ class StreamFiltering {
 
    public static void main(String[] args) {
 
-      List<Dish> menus = Dish.MENU;
-      List<Dish> vegetarianDishes = menus.stream()
-              .filter((menu) -> menu.isVegetarian())
+      List<Dish> menu = Dish.MENU;
+      List<Dish> vegetarianDishes = menu.stream()
+              .filter((dish) -> dish.isVegetarian())
               .collect(Collectors.toList());
       vegetarianDishes.stream().forEach(System.out::println);
    }
